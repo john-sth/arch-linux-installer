@@ -1,8 +1,7 @@
 # Install needed packages
-
-## Base packages
+# Base packages
 startx
-### Shell
+# Shell
 zsh
 zsh-completions
 zsh-autosuggestions
@@ -12,7 +11,6 @@ vim
 git
 pcmanfm
 alacritty
-#topgrade
 bat
 fzf
 mpd
@@ -39,7 +37,7 @@ pdftk
 feh
 fd
 jq
-## Window manager i3wm
+# Window manager i3wm
 i3-wm
 picom
 ttf-envycoder-nerd
@@ -54,10 +52,10 @@ pulsemixer
 rofi
 #dmenu
 yazi
-## work
+# work
 xournalpp
 thunderbird
-## misc
+# misc
 networkmanager-openvpn
 yt-dlp
 veracrypt
