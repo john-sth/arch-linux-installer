@@ -36,7 +36,7 @@ function post_install() {
 
 function main() {
     ## install yay for AUR package installation
-    sh $SCRIPTS/install_yay
+    sh ./configurations/install_yay.sh
     install_packages
     post_install
 }
