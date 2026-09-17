@@ -1,0 +1,70 @@
+# Install needed packages
+
+## Base packages
+startx
+
+### Shell
+zsh
+zsh-completions
+zsh-autosuggestions
+zsh-autocomplete
+zsh-syntax-highlighting
+
+vim
+git
+pcmanfm
+alacritty
+topgrade
+bat
+fzf
+mpd
+mpv
+tmux
+zathura
+zathura-pdf-poppler
+timeshift
+tldr
+ncdu
+speedtest-cli
+gvfs
+ffmpeg
+fastfetch
+eza
+docker
+docker-compose
+bluez
+btop
+zoxide
+tree
+nsxiv
+pdftk
+feh
+fd
+
+## Window manager i3wm
+i3wm
+i3lock-color
+picom
+ttf-envycoder-nerd
+ttf-hack-nerd
+autotiling
+polybar
+dunst
+xwallpaper
+blueman
+firefox
+vicinae
+pulsemixer
+rofi
+#dmenu
+yazi
+
+## work
+xournalpp
+
+## misc
+networkmanager-openvpn
+yt-dlp
+veracrypt
+qbittorrent
+nmap
