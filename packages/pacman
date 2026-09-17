@@ -2,14 +2,12 @@
 
 ## Base packages
 startx
-
 ### Shell
 zsh
 zsh-completions
 zsh-autosuggestions
 zsh-autocomplete
 zsh-syntax-highlighting
-
 vim
 git
 pcmanfm
@@ -40,7 +38,6 @@ nsxiv
 pdftk
 feh
 fd
-
 ## Window manager i3wm
 i3-wm
 picom
@@ -56,11 +53,9 @@ pulsemixer
 rofi
 #dmenu
 yazi
-
 ## work
 xournalpp
 thunderbird
-
 ## misc
 networkmanager-openvpn
 yt-dlp
