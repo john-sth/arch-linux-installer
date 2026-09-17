@@ -1,6 +1,5 @@
 # Install needed packages
 # Base packages
-startx
 # Shell
 zsh
 zsh-completions
