@@ -12,7 +12,7 @@ vim
 git
 pcmanfm
 alacritty
-topgrade
+#topgrade
 bat
 fzf
 mpd
@@ -38,6 +38,7 @@ nsxiv
 pdftk
 feh
 fd
+jq
 ## Window manager i3wm
 i3-wm
 picom
