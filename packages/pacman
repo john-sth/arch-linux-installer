@@ -42,8 +42,7 @@ feh
 fd
 
 ## Window manager i3wm
-i3wm
-i3lock-color
+i3-wm
 picom
 ttf-envycoder-nerd
 ttf-hack-nerd
@@ -53,7 +52,6 @@ dunst
 xwallpaper
 blueman
 firefox
-vicinae
 pulsemixer
 rofi
 #dmenu
@@ -61,6 +59,7 @@ yazi
 
 ## work
 xournalpp
+thunderbird
 
 ## misc
 networkmanager-openvpn

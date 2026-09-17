@@ -29,6 +29,8 @@ function post_install() {
     # install netbird
     curl -fsSL https://pkgs.netbird.io/install.sh | sh
     #netbird up
+    # vicinae 
+    curl -fsSL https://vicinae.com/install | bash
 }
 
 
