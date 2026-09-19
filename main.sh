@@ -1,11 +1,11 @@
-# ================================= #
-# == ARCH SETUP INSTALLER == #
-# ================================= #
+# ============================================================================
+# ARCH LINUX INSTALLER
+# ============================================================================
 
-# ================================= #
+# =================================
 # part 1
-# ================================= #
-#
+# =================================
+
 printf '\033c'
 echo "Welcome to john's arch installer script"
 sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
@@ -15,7 +15,6 @@ loadkeys de-latin1
 timedatectl set-ntp true
 
 # create partitions 
-
 lsblk
 echo "Enter the drive: "
 read drive
@@ -91,13 +90,7 @@ useradd -m -G wheel -s /bin/zsh $username
 passwd $username
 
 
-echo "Pre-Installation Finish Reboot now"
-ai3_path=/home/$username/arch_install3.sh
-sed '1,/^#part3$/d' arch_install2.sh > $ai3_path
-chown $username:$username $ai3_path
-chmod +x $ai3_path
-su -c $ai3_path -s /bin/sh $username
-exit 
+echo "Pre-Installation finished"
 
 # =================================
 # part3
@@ -105,31 +98,12 @@ exit
 
 printf '\033c'
 
+# install programs 
+sh ./install_programs.sh
 # fetch dotfiles and install to system 
+sh ./post_install.sh
 
-cd $HOME
-git clone --separate-git-dir=$HOME/.cfg https://github.com/john-sth/arch-linux-rice tmpdotfiles
-
-rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
-
-rm -r tmpdotfiles
-
-# dmenu: Program Menu
-git clone https://github.com/john-sth/dmenu2 ~/.config/dmenu
-sudo makepkg -si ~/.config/dmenu
-
-# pikaur: AUR helper
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur
-makepkg -fsri
-cd
-
-mkdir Downloads music code 
-
-ln -s ~/.config/x11/xinitrc .xinitrc
-ln -s ~/.config/shell/profile .zprofile
 rm ~/.zshrc ~/.zsh_history
-
 
 exit
 

@@ -36,6 +36,7 @@ pdftk
 feh
 fd
 jq
+stow
 # Window manager i3wm
 i3-wm
 picom
